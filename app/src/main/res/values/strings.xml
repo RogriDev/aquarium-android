@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">Aquarium</string>
+    <string name="betta_ou_peixe_de_briga_betta_splendens">Betta ou peixe de briga (Betta splendens)</string>
+    <string name="origem_sia_tail_ndia_mal_sia_e_vietn">- Origem: Ásia (Tailândia,Malásia e Vietnã)</string>
+    <string name="comprimento_m_ximo_10_cm">- Comprimento máximo: 10 cm</string>
+    <string name="ph_7_0_a_7_2">- pH: 7,0 a 7,2</string>
+    <string name="temperatura_24_a_30_c">- Temperatura: 24 a 30°C</string>
+    <string name="aqu_rio_pequeno_a_m_dio">- Aquário: pequeno a médio</string>
+    <string name="comportamento_pac_fico_com_outros_peixes_mas_agressivo_entre_os_machos_da_mesma_esp_cie">- Comportamento: pacífico com outros peixes,mas agressivo entre os machos da mesma espécie</string>
+    <string name="name">Name</string>
+</resources>
