@@ -28,7 +28,6 @@ class MainActivity : AppCompatActivity() {
             val shareIntent = Intent.createChooser(intent, null)
             startActivity(shareIntent)
         }
-
     }
 
 }
