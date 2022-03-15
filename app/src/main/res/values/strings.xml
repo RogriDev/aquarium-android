@@ -8,4 +8,7 @@
     <string name="aqu_rio_pequeno_a_m_dio">- Aquário: pequeno a médio</string>
     <string name="comportamento_pac_fico_com_outros_peixes_mas_agressivo_entre_os_machos_da_mesma_esp_cie">- Comportamento: pacífico com outros peixes,mas agressivo entre os machos da mesma espécie</string>
     <string name="name">Name</string>
+    <string name="fishies_name">Fishies Name</string>
+    <string name="water_type">water type</string>
+    <string name="fishies_photo">fishies photo</string>
 </resources>
