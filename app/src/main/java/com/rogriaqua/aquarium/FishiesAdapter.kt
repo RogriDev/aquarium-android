@@ -7,7 +7,7 @@ import com.rogriaqua.aquarium.databinding.ItemFishiesBinding
 
 class FishiesAdapter(
     private val list: List<Fishies>,
-    private val onItemClickListener: ItemClickListener
+    private val onItemClickListener: FishiesItemClickListener
 ) : RecyclerView.Adapter<FishiesViewHolder>() {
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): FishiesViewHolder {
@@ -24,24 +24,29 @@ class FishiesAdapter(
     override fun getItemCount(): Int = list.size
 }
 
-class FishiesViewHolder(private val view: ItemFishiesBinding) : RecyclerView.ViewHolder(view.root) {
+class FishiesViewHolder(private val binding: ItemFishiesBinding) :
+    RecyclerView.ViewHolder(binding.root) {
 
-    fun bind(fishies: Fishies, onItemClickListener: ItemClickListener) {
-        view.apply {
-            setOnClickListener { onItemClickListener.onClick(fishies) }
-            imageButtonFavorite.setImageResource(fishies.favorite)
+    fun bind(fishies: Fishies, onItemClickListener: FishiesItemClickListener) {
+        binding.apply {
+            root.setOnClickListener { onItemClickListener.onItemClick(fishies) }
+            imageButtonFavorite.setImageResource(R.drawable.button_favorite)
+            imageButtonFavorite.setOnClickListener {
+                if (fishies.isFavorite) {
+                    imageButtonFavorite.setImageResource(R.drawable.button_favorite)
+                } else {
+                    imageButtonFavorite.setImageResource(R.drawable.favorite_filled)
+                }
+                onItemClickListener.onFavoriteClick(fishies)
+            }
             imageItemFish.setImageResource(fishies.image)
             textFishName.text = fishies.name
             textWaterType.text = fishies.water
         }
     }
-
-    private fun setOnClickListener(function: () -> Unit) {
-
-    }
 }
 
-fun interface ItemClickListener {
-    fun onClick(fishies: Fishies)
+interface FishiesItemClickListener {
+    fun onItemClick(fishies: Fishies)
+    fun onFavoriteClick(fishies: Fishies)
 }
-

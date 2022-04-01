@@ -6,5 +6,5 @@ data class Fishies(
     @DrawableRes val image: Int,
     val name: String,
     val water: String,
-    @DrawableRes val favorite: Int
+    val isFavorite: Boolean
 )

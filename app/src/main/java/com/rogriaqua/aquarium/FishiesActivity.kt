@@ -6,7 +6,7 @@ import androidx.appcompat.app.AppCompatActivity
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.rogriaqua.aquarium.databinding.ActivityFishiesBinding
 
-class FishiesActivity : AppCompatActivity() {
+class FishiesActivity : AppCompatActivity(), FishiesItemClickListener {
 
     private lateinit var binding: ActivityFishiesBinding
 
@@ -15,15 +15,20 @@ class FishiesActivity : AppCompatActivity() {
         binding = ActivityFishiesBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
-        val onClickListener = ItemClickListener { fishies ->
-            Toast.makeText(this, "'${fishies.name} clicked", Toast.LENGTH_SHORT).show()
-        }
-
-        val adapter = FishiesAdapter(FishiesData().loadFishies(), onClickListener)
+        val adapter = FishiesAdapter(FishiesData().loadFishies(), this)
         val layoutManager = LinearLayoutManager(this, LinearLayoutManager.VERTICAL, false)
 
-        binding.recyclerView.layoutManager = layoutManager
-        binding.recyclerView.adapter = adapter
+        with(binding) {
+            recyclerView.layoutManager = layoutManager
+            recyclerView.adapter = adapter
+        }
+    }
 
+    override fun onItemClick(fishies: Fishies) {
+        Toast.makeText(this, "'${fishies.name} clicked", Toast.LENGTH_SHORT).show()
+    }
+
+    override fun onFavoriteClick(fishies: Fishies) {
+        Toast.makeText(this, "'${fishies.name} favorited", Toast.LENGTH_SHORT).show()
     }
 }
