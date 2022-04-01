@@ -6,117 +6,140 @@ class FishiesData {
         Fishies(
             image = R.drawable.betta,
             name = "Betta",
-            water = "Freshwater"
+            water = "Freshwater",
+            favorite = R.drawable.buton_favorite
         ),
         Fishies(
             image = R.drawable.tricogaster,
             name = "Tricogaster",
-            water = "Freshwater"
+            water = "Freshwater",
+            favorite = R.drawable.buton_favorite
         ),
         Fishies(
             image = R.drawable.itui_cavalo,
             name = "Ituí Cavalo",
-            water = "Freshwater"
+            water = "Freshwater",
+            favorite = R.drawable.buton_favorite
         ),
         Fishies(
             image = R.drawable.molinesia,
             name = "Molinésia",
-            water = "Freshwater"
+            water = "Freshwater",
+            favorite = R.drawable.buton_favorite
         ),
         Fishies(
             image = R.drawable.peixe_papagaio,
             name = "Peixe Papagaio",
-            water = "Freshwater"
+            water = "Freshwater",
+            favorite = R.drawable.buton_favorite
         ),
         Fishies(
             image = R.drawable.peixe_palhaco,
             name = "Peixe Palhaço",
-            water = "Saltwater"
+            water = "Saltwater",
+            favorite = R.drawable.buton_favorite
         ),
         Fishies(
             image = R.drawable.kinguio,
             name = "Kinguio",
-            water = "Freshwater"
+            water = "Freshwater",
+            favorite = R.drawable.buton_favorite
         ),
         Fishies(
             image = R.drawable.peixe_neon,
             name = "Neon",
-            water = "Freshwater"
+            water = "Freshwater",
+            favorite = R.drawable.buton_favorite
         ),
         Fishies(
             image = R.drawable.tetra,
             name = "Tetra",
-            water = "Freshwater"
+            water = "Freshwater",
+            favorite = R.drawable.buton_favorite
         ),
         Fishies(
             image = R.drawable.platy,
             name = "Platy",
-            water = "Freshwater"
+            water = "Freshwater",
+            favorite = R.drawable.buton_favorite
         ),
         Fishies(
             image = R.drawable.peixe_leao,
             name = "Peixe Leão",
-            water = "Saltwater"
+            water = "Saltwater",
+            favorite = R.drawable.buton_favorite
         ),
         Fishies(
             image = R.drawable.pangasius,
             name = "Pangasius",
-            water = "Freshwater"
+            water = "Freshwater",
+            favorite = R.drawable.buton_favorite
         ),
         Fishies(
             image = R.drawable.acara_disco,
             name = "Acará Disco",
-            water = "Freshwater"
+            water = "Freshwater",
+            favorite = R.drawable.buton_favorite
         ),
         Fishies(
             image = R.drawable.botia_palhaco,
             name = "Bótia Palhaço",
-            water = "Freshwater"
+            water = "Freshwater",
+            favorite = R.drawable.buton_favorite
         ),
         Fishies(
             image = R.drawable.hap_electric_blue,
             name = "Hap Electric Blue",
-            water = "Freshwater"
+            water = "Freshwater",
+            favorite = R.drawable.buton_favorite
         ),
         Fishies(
             image = R.drawable.cirurgiao_patela,
             name = "Cirurgião Patela",
-            water = "Saltwater"
+            water = "Saltwater",
+            favorite = R.drawable.buton_favorite
         ),
         Fishies(
             image = R.drawable.peixe_espada,
             name = "Peixe Espada",
-            water = "Freshwater"
+            water = "Freshwater",
+            favorite = R.drawable.buton_favorite
         ),
         Fishies(
             image = R.drawable.cascudo,
             name = "Cascudo",
-            water = "Freshwater"
+            water = "Freshwater",
+            favorite = R.drawable.buton_favorite
         ),
         Fishies(
             image = R.drawable.cruzeiro_do_sul,
             name = "Cruzeiro so Sul",
-            water = "Freshwater"
+            water = "Freshwater",
+            favorite = R.drawable.buton_favorite
         ),
         Fishies(
             image = R.drawable.paraiso,
             name = "Paraiso",
-            water = "Freshwater"
+            water = "Freshwater",
+            favorite = R.drawable.buton_favorite
         ),
         Fishies(
             image = R.drawable.mocinha,
             name = "Mocinha",
-            water = "Freshwater"
+            water = "Freshwater",
+            favorite = R.drawable.buton_favorite
         ),
         Fishies(
             image = R.drawable.mato_grosso,
             name = "Mato Grosso",
-            water = "Freshwater"
+            water = "Freshwater",
+            favorite = R.drawable.buton_favorite
         ),
         Fishies(
             image = R.drawable.barbo_cereja,
             name = "Barbo Cereja",
-            water = "Freshwater"
+            water = "Freshwater",
+            favorite = R.drawable.buton_favorite
         ),
 
 

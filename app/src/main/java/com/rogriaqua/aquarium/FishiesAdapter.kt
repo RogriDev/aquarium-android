@@ -1,11 +1,9 @@
 package com.rogriaqua.aquarium
 
 import android.view.LayoutInflater
-import android.view.View
 import android.view.ViewGroup
-import android.widget.ImageView
-import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
+import com.rogriaqua.aquarium.databinding.ItemFishiesBinding
 
 class FishiesAdapter(
     private val list: List<Fishies>,
@@ -13,9 +11,9 @@ class FishiesAdapter(
 ) : RecyclerView.Adapter<FishiesViewHolder>() {
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): FishiesViewHolder {
-        val view = LayoutInflater.from(parent.context)
-            .inflate(R.layout.item_fishies, parent, false)
-        return FishiesViewHolder(view)
+        return FishiesViewHolder(
+            ItemFishiesBinding.inflate(LayoutInflater.from(parent.context), parent, false)
+        )
     }
 
     override fun onBindViewHolder(holder: FishiesViewHolder, position: Int) {
@@ -26,15 +24,20 @@ class FishiesAdapter(
     override fun getItemCount(): Int = list.size
 }
 
-class FishiesViewHolder(private val view: View) : RecyclerView.ViewHolder(view) {
+class FishiesViewHolder(private val view: ItemFishiesBinding) : RecyclerView.ViewHolder(view.root) {
 
     fun bind(fishies: Fishies, onItemClickListener: ItemClickListener) {
         view.apply {
             setOnClickListener { onItemClickListener.onClick(fishies) }
-            findViewById<ImageView>(R.id.image_item_fish).setImageResource(fishies.image)
-            findViewById<TextView>(R.id.text_fish_name).text = fishies.name
-            findViewById<TextView>(R.id.text_water_type).text = fishies.water
+            imageButtonFavorite.setImageResource(fishies.favorite)
+            imageItemFish.setImageResource(fishies.image)
+            textFishName.text = fishies.name
+            textWaterType.text = fishies.water
         }
+    }
+
+    private fun setOnClickListener(function: () -> Unit) {
+
     }
 }
 
