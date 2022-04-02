@@ -1,5 +1,7 @@
 package com.rogriaqua.aquarium
 
+import com.rogriaqua.aquarium.models.Fishies
+
 class FishiesData {
 
     fun loadFishies(): List<Fishies> = listOf(

@@ -1,4 +1,4 @@
-package com.rogriaqua.aquarium
+package com.rogriaqua.aquarium.models
 
 import androidx.annotation.DrawableRes
 

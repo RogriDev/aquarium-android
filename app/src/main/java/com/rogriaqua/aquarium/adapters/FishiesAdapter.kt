@@ -4,9 +4,10 @@ import android.view.LayoutInflater
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
 import com.rogriaqua.aquarium.databinding.ItemFishiesBinding
+import com.rogriaqua.aquarium.models.Fishies
 
 class FishiesAdapter(
-    private val list: List<Fishies>,
+    private var list: List<Fishies>,
     private val onItemClickListener: FishiesItemClickListener
 ) : RecyclerView.Adapter<FishiesViewHolder>() {
 
@@ -22,6 +23,12 @@ class FishiesAdapter(
     }
 
     override fun getItemCount(): Int = list.size
+
+    fun updateList(list: List<Fishies>) {
+        this.list = list
+
+        notifyDataSetChanged()
+    }
 }
 
 class FishiesViewHolder(private val binding: ItemFishiesBinding) :

@@ -29,7 +29,6 @@ android {
     kotlinOptions {
         jvmTarget = '1.8'
     }
-
     viewBinding {
         enabled = true
     }
@@ -42,6 +41,10 @@ dependencies {
     implementation 'com.google.android.material:material:1.5.0'
     implementation 'androidx.constraintlayout:constraintlayout:2.1.3'
     testImplementation 'junit:junit:4.13.2'
+    implementation "androidx.lifecycle:lifecycle-extensions:2.2.0"
     androidTestImplementation 'androidx.test.ext:junit:1.1.3'
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.4.0'
+    implementation "androidx.lifecycle:lifecycle-viewmodel-ktx:2.4.1"
+    //para usar o método viewModels()
+    implementation "androidx.activity:activity-ktx:1.4.0"
 }
