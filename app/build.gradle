@@ -47,4 +47,6 @@ dependencies {
     implementation "androidx.lifecycle:lifecycle-viewmodel-ktx:2.4.1"
     //para usar o método viewModels()
     implementation "androidx.activity:activity-ktx:1.4.0"
+    //fragment
+    implementation "androidx.fragment:fragment-ktx:1.4.1"
 }

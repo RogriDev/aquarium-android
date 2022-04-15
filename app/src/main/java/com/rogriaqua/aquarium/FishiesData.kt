@@ -143,7 +143,5 @@ class FishiesData {
             water = "Freshwater",
             isFavorite = false
         ),
-
-
-        )
+    )
 }
